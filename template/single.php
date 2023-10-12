@@ -9,7 +9,7 @@
                      <h1><?php the_title(); ?></h1>
                      <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
                      <span class="meta">
-                         Posted by
+                        Posted by
                          <a href="#!">Start Bootstrap</a>
                          on August 24, 2023
                      </span>

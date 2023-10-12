@@ -28,4 +28,6 @@ function experts_setup()
 }
 
 
-include EXP_PATH. "/ includes/frontend/functions.php";
+include EXP_PATH . "/includes/frontend/functions.php";
+include EXP_PATH . "/includes/frontend/post-types.php";
+ 
