@@ -1,6 +1,6 @@
 <?php
 
-define('EXP_PATH',get_template_directory());
+define('EXP_PATH', get_template_directory());
 define('EXP_URL', get_template_directory_uri());
 
 add_action('wp_enqueue_scripts', 'experts_add_assets');
@@ -24,10 +24,15 @@ function experts_setup()
 
    add_theme_support('post-thumbnails');
    add_theme_support('title-tag');
-   add_theme_support('post-formats',['gallery', 'video', 'audio']); 
+   add_theme_support('post-formats',['gallery', 'video', 'audio']);
+   add_filter('show_admin_bar','__return_false'); 
+
+   //register_nav_menu
+   register_nav_menu('top-bar','menu for theme top bar');
 }
 
 
 include EXP_PATH . "/includes/frontend/functions.php";
 include EXP_PATH . "/includes/frontend/post-types.php";
- 
+include EXP_PATH . "/includes/frontend/taxonomies.php";
+
