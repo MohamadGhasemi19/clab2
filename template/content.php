@@ -21,18 +21,20 @@
                     </p>
                 </div>
                 <hr class="my-4" />
-                <?php endwhile; ?>   
-             <?php endif; ?>
-       <!-- Pager-->
-       <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                <?php endwhile; ?>
+                <!-- Pager-->
+             <div class="clearfix">
+              <?php next_posts_link('مطالب قدیمی تر'); ?>
+              <?php previous_posts_link('مطالب جدید تر'); ?>
+
+            </div>
+          <?php endif; ?>
+
           </div>
       </div>
   </div>  
-  
-<div class="d-flex jQuery-content-end mb-4">
 
-<?php the_date(); ?>
-
+  <hr>
 
 
 

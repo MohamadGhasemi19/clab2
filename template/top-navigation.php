@@ -20,7 +20,7 @@
                         <li class="nav-item">
                             <a class="nav-link"  href="contact.html">Contact</a>
                         </li>
-                    </ul>
+                    </ul>   
                        <?php wp_nav_menu([
                           'theme_location' => 'top_bar'
                        ]); ?>
